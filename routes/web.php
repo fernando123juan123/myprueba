@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/','ControllerPrueba@index')->name('prueba.index');
+
+Route::get('/ejemplo2','ControllerPrueba@ejemplo2')->name('prueba.ejemplo2');
+
+Route::post('/ejemplo2_res','ControllerPrueba@ejemplo2_res')->name('prueba.ejemplo2_res');
